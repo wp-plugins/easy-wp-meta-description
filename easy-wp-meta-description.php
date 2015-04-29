@@ -5,7 +5,7 @@ Plugin URI: http://easy-wp-plugin.com/meta-description/
 Description: Adds meta description to each post
 Version: 1.0.0
 Author: Mats Westholm
-Author URI: http://matswestholm.se/
+Author URI: http://easy-wp-plugin.com/mats-westholm/
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Domain Path: /languages
