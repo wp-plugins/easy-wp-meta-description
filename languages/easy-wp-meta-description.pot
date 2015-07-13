@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Easy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-09 15:27+0100\n"
-"PO-Revision-Date: 2015-07-09 15:27+0100\n"
+"POT-Creation-Date: 2015-07-09 15:28+0100\n"
+"PO-Revision-Date: 2015-07-09 16:19+0100\n"
 "Last-Translator: Mats Westholm <mw@webtiger.se>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,9 +17,9 @@ msgstr ""
 
 #: ../easy-wp-meta-description.php:98
 msgid "Add a meta description to your HTML code"
-msgstr "Lägg till en metabeskrivning till din HTML-kod"
+msgstr ""
 
 #: ../easy-wp-meta-description.php:99
 msgid "Character count"
-msgstr "Antal tecken"
+msgstr ""
 

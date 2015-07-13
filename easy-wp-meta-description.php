@@ -3,7 +3,7 @@
 Plugin Name: Easy WP Meta Description
 Plugin URI: http://easy-wp-plugin.com/meta-description/
 Description: Adds meta description to each post
-Version: 1.0.0
+Version: 1.1.0
 Author: Mats Westholm
 Author URI: http://easy-wp-plugin.com/mats-westholm/
 License: GPL2
@@ -79,7 +79,6 @@ class Easy_WP_Meta_Description{
 		$output = 'names';
 		$operator = 'and';
 		$custom_posttypes = get_post_types( $args, $output, $operator );
-		
 		$builtin_posttypes = array( 'post', 'page' );
 		$screens = array_merge( $builtin_posttypes, $custom_posttypes );
 		foreach ( $screens as $screen ) {
@@ -93,9 +92,19 @@ class Easy_WP_Meta_Description{
 		$post_id = get_the_ID();
 		$value = get_post_meta( $post_id, $this->meta_key, true );?>
 <div class="wp-editor-container">
-<textarea class="wp-editor-area" name="add_description" cols="80" rows="5"><?php print $value; ?></textarea>
+<textarea class="wp-editor-area" id="easy_wp_description" name="add_description" cols="80" rows="5"><?php print $value; ?></textarea>
 </div>
-<p><?php _e( 'Add a meta description to your HTML code', $this->plugin_name ); ?></p>
+<p><?php 
+		_e( 'Add a meta description to your HTML code', $this->plugin_name ); ?>. <?php
+		_e( 'Character count', $this->plugin_name ); ?>: <span id="easy_wp_output"></span></p>
+<script>
+	jQuery( document ).ready( update_output );
+	jQuery( '#easy_wp_description' ).on( 'keyup', update_output );
+	function update_output( event ){
+		var n = jQuery( '#easy_wp_description' ).val().length;
+		jQuery( '#easy_wp_output' ).text( n );
+	}
+</script>
 		<?php
 	}
 	

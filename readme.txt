@@ -1,10 +1,10 @@
 === Easy WP Meta Description ===
 Contributors: matswes
 Donate link: http://easy-wp-plugin.com/donation/
-Tags: meta, description, header, head
+Tags: meta, description, header, head, meta description
 Requires at least: 3.1
-Tested up to: 4.2.1
-Stable tag: 1.0
+Tested up to: 4.2.2
+Stable tag: 1.1.0
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,7 +44,9 @@ Go to Dashboard > Plugins to activate
 
 == Frequently Asked Questions ==
 
-Questions are answered in the support forum at wordpress.org Plugin Directory and FAQ will be posted at http://easy-wp-plugin.com/faq/
+How to translate the plugin?
+
+Use the file wp-content/plugins/easy-wp-meta-description/languages/easy-wp-meta-description.pot and Poedit to create a .mo file for your language. Put the file in wp-content/plugins/easy-wp-meta-description/languages.
 
 == Screenshots ==
 
@@ -52,4 +54,4 @@ Questions are answered in the support forum at wordpress.org Plugin Directory an
 
 == Changelog ==
 
-No changes yet
+1.1 Character count function added
